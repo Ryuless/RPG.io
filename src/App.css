@@ -951,7 +951,13 @@ button.accent:hover {
   .home-head-actions,
   .run-nav {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  button {
+    padding: 8px 14px;
+    font-size: 12px;
   }
 
   .character-list,
