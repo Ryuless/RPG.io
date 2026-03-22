@@ -919,15 +919,14 @@ button.accent:hover {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
 
-  .arena {
-    width: 100% !important;
-    height: min(65vh, 540px) !important;
-  }
-
   .virtual-controls {
     bottom: 20px;
     left: 20px;
     right: 20px;
+  }
+
+  .run-page {
+    padding-bottom: 140px; /* Space for virtual controls */
   }
 }
 

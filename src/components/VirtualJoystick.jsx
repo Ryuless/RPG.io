@@ -31,7 +31,9 @@ export default function VirtualJoystick({ onMove, onActionDown, onActionUp }) {
   }
 
   const handleDragMove = (e) => {
+    if (draggingRef.current === null) return
     e.preventDefault()
+    
     const touches = e.changedTouches ? Array.from(e.changedTouches) : [e]
     const touch = touches.find((t) => (t.identifier ?? 'mouse') === draggingRef.current)
     
@@ -62,7 +64,9 @@ export default function VirtualJoystick({ onMove, onActionDown, onActionUp }) {
   }
 
   const handleDragEnd = (e) => {
+    if (draggingRef.current === null) return
     e.preventDefault()
+    
     const touches = e.changedTouches ? Array.from(e.changedTouches) : [e]
     const activeTouch = touches.find((t) => (t.identifier ?? 'mouse') === draggingRef.current)
 
