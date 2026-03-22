@@ -24,6 +24,9 @@ import {
   xpForLevel,
 } from '../game/utils'
 
+import useDeviceDetect from '../hooks/useDeviceDetect'
+import VirtualJoystick from '../components/VirtualJoystick'
+
 const rankPriority = {
   Common: 1,
   Uncommon: 2,
@@ -413,8 +416,11 @@ function RunScreen({ character, onBackHome, onSkillDiscovered }) {
   const initialGame = useMemo(() => createGameState(character), [character])
   const gameRef = useRef(initialGame)
   const keysRef = useRef({})
+  const joystickRef = useRef({ x: 0, y: 0 })
   const rafRef = useRef(0)
   const lastTimeRef = useRef(0)
+
+  const { isMobile } = useDeviceDetect()
 
   const [gameView, setGameView] = useState(() => createGameSnapshot(initialGame))
 
@@ -530,18 +536,20 @@ function RunScreen({ character, onBackHome, onSkillDiscovered }) {
         const up = keysRef.current.w || keysRef.current.arrowup
         const down = keysRef.current.s || keysRef.current.arrowdown
 
-        let moveX = 0
-        let moveY = 0
+        let moveX = joystickRef.current.x
+        let moveY = joystickRef.current.y
 
-        if (left) moveX -= 1
-        if (right) moveX += 1
-        if (up) moveY -= 1
-        if (down) moveY += 1
+        if (moveX === 0 && moveY === 0) {
+          if (left) moveX -= 1
+          if (right) moveX += 1
+          if (up) moveY -= 1
+          if (down) moveY += 1
 
-        if (moveX !== 0 || moveY !== 0) {
-          const len = Math.hypot(moveX, moveY)
-          moveX /= len
-          moveY /= len
+          if (moveX !== 0 || moveY !== 0) {
+            const len = Math.hypot(moveX, moveY)
+            moveX /= len
+            moveY /= len
+          }
         }
 
         game.player.x = clamp(
@@ -1256,6 +1264,27 @@ function RunScreen({ character, onBackHome, onSkillDiscovered }) {
     setGameView(createGameSnapshot(game))
   }
 
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(() => {});
+    } else {
+      document.exitFullscreen();
+    }
+  }
+
+  const handleJoystickMove = (pos) => {
+    joystickRef.current.x = pos.x
+    joystickRef.current.y = pos.y
+  }
+
+  const handleJoystickActionDown = () => {
+    keysRef.current[' '] = true
+  }
+
+  const handleJoystickActionUp = () => {
+    keysRef.current[' '] = false
+  }
+
   const pickSkillUpgrade = (skillId) => {
     const game = gameRef.current
     if (!game.pausedForLevel) {
@@ -1351,6 +1380,9 @@ function RunScreen({ character, onBackHome, onSkillDiscovered }) {
           <h2>Run Screen</h2>
         </div>
         <nav className="run-nav">
+          <button className="ghost" onClick={toggleFullscreen}>
+            Fullscreen
+          </button>
           <button className="ghost" onClick={togglePause}>
             {game.paused ? 'Resume' : 'Pause'}
           </button>
@@ -1540,6 +1572,14 @@ function RunScreen({ character, onBackHome, onSkillDiscovered }) {
             </p>
             <button onClick={onBackHome}>Kembali ke Home</button>
           </div>
+        )}
+
+        {isMobile && !game.paused && !game.pausedForLevel && !game.gameOver && (
+          <VirtualJoystick 
+            onMove={handleJoystickMove} 
+            onActionDown={handleJoystickActionDown} 
+            onActionUp={handleJoystickActionUp} 
+          />
         )}
       </div>
 
