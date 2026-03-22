@@ -881,7 +881,7 @@ button.accent:hover {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1080px), (hover: none) and (pointer: coarse) {
   .app-shell {
     padding: 8px; /* Reduced from 14px to maximize game space */
   }
@@ -917,6 +917,26 @@ button.accent:hover {
   .run-meta span {
     font-size: 11px;
     padding: 4px 8px;
+  }
+
+  .arena {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .overlay {
+    padding: 12px;
+    gap: 6px;
+  }
+
+  .overlay h3 {
+    font-size: 26px;
+  }
+
+  .overlay p {
+    font-size: 13px; /* Mencegah teks points game over turun terpotong */
+    line-height: 1.4;
+    margin: 0 auto;
   }
 
   .home-head-actions,

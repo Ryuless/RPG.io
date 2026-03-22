@@ -1,8 +1,19 @@
-const isMobile = typeof window !== 'undefined' && window.innerWidth <= 1080
+export let VIEW_WIDTH = 960
+export let VIEW_HEIGHT = 540
 
-// Calculated from app-shell padding (8px * 2) + page padding (12px * 2) + page border (1px * 2) = 42px. We'll round it to 42.
-export const VIEW_WIDTH = isMobile ? window.innerWidth - 42 : 960 
-export const VIEW_HEIGHT = isMobile ? Math.min(window.innerHeight * 0.6, 480) : 540
+export const updateViewSize = () => {
+  if (typeof window === 'undefined') return
+  const isMobile = window.innerWidth <= 1080 || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+  // Calculated using clientWidth to exclude scrollbars and added extra margin for safety
+  VIEW_WIDTH = isMobile ? (document.documentElement.clientWidth || window.innerWidth) - 56 : 960 
+  VIEW_HEIGHT = isMobile ? Math.min(window.innerHeight * 0.55, 480) : 540
+}
+
+updateViewSize()
+if (typeof window !== 'undefined') {
+  window.addEventListener('resize', updateViewSize)
+}
+
 export const WORLD_WIDTH = 2800
 export const WORLD_HEIGHT = 1800
 export const PLAYER_RADIUS = 16

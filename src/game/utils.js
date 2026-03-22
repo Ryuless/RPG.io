@@ -53,7 +53,8 @@ export const inViewport = (x, y, radius, camera) => {
 }
 
 export const isMobileDevice = () => {
-  return window.innerWidth <= 768 || /Mobi|Android/i.test(navigator.userAgent)
+  if (typeof window === 'undefined') return false
+  return window.innerWidth <= 1080 || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
 }
 
 export const spawnEnemyAroundPlayer = (player) => {

@@ -5,12 +5,13 @@ export default function useDeviceDetect() {
 
   useEffect(() => {
     const handleResize = () => {
-      // Menyesuaikan logika deteksi mobile sesuai lebar layar (contoh: <= 768px dihitung mobile)
-      // Bisa juga menggunakan regex userAgent, namun pengecekan dimensi lebih aman dalam konteks resize viewport
-      setMobile(window.innerWidth <= 768 || /Mobi|Android/i.test(navigator.userAgent));
+      // Considered mobile if width <= 1080 (consistent with CSS media query)
+      // OR if it has a mobile user agent (catches phones in landscape where width > 1080)
+      const isMobileDevice = window.innerWidth <= 1080 || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      setMobile(isMobileDevice);
     };
 
-    handleResize(); // trigger saat komponen pertama dimuat
+    handleResize();
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
