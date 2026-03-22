@@ -1,0 +1,122 @@
+DAFTAR SKILL IOGEMU
+Total Skill: 105
+
+Ringkasan per Type:
+- Magic: 17
+- Defense: 12
+- Melee: 11
+- Sustain: 11
+- Ranged: 10
+- Utility: 10
+- Debuff: 10
+- Mobility: 9
+- Control: 8
+- Support: 5
+- Limited: 2
+
+Daftar Lengkap Skill:
+001. Stone Skin | ID: stoneSkin | Type: Defense | Rank: Common | Limited: No
+002. Titan Bastion Common | ID: common_filler_1 | Type: Defense | Rank: Common | Limited: No
+003. Arcane Bolt | ID: arcaneBolt | Type: Magic | Rank: Common | Limited: No
+004. Eternal Rift Common | ID: common_filler_4 | Type: Magic | Rank: Common | Limited: No
+005. Meteor Spear | ID: meteorSpear | Type: Magic | Rank: Common | Limited: No
+006. Blade Rush | ID: bladeRush | Type: Melee | Rank: Common | Limited: No
+007. Twin Fang | ID: twinFang | Type: Melee | Rank: Common | Limited: No
+008. Whirl Slash | ID: whirlSlash | Type: Melee | Rank: Common | Limited: No
+009. Swift Stride | ID: swiftStride | Type: Mobility | Rank: Common | Limited: No
+010. Hunter Instinct | ID: hunterInstinct | Type: Ranged | Rank: Common | Limited: No
+011. Rupture Shot | ID: ruptureShot | Type: Ranged | Rank: Common | Limited: No
+012. Guardian Aura | ID: guardianAura | Type: Support | Rank: Common | Limited: No
+013. Guardian Prayer | ID: guardianPrayer | Type: Support | Rank: Common | Limited: No
+014. Venom Pulse Common | ID: common_filler_2 | Type: Sustain | Rank: Common | Limited: No
+015. Storm Tempo Common | ID: common_filler_3 | Type: Utility | Rank: Common | Limited: No
+016. Gravity Rend | ID: gravityRend | Type: Control | Rank: Uncommon | Limited: No
+017. Poison Cloud | ID: poisonCloud | Type: Debuff | Rank: Uncommon | Limited: No
+018. Toxic Rain | ID: toxicRain | Type: Debuff | Rank: Uncommon | Limited: No
+019. Bastion Core | ID: bastionCore | Type: Defense | Rank: Uncommon | Limited: No
+020. Iron Will | ID: ironWill | Type: Defense | Rank: Uncommon | Limited: No
+021. Ember Lance | ID: emberLance | Type: Magic | Rank: Uncommon | Limited: No
+022. Eternal Rift Uncommon | ID: uncommon_filler_2 | Type: Magic | Rank: Uncommon | Limited: No
+023. Fireball Barrage | ID: fireball | Type: Magic | Rank: Uncommon | Limited: No
+024. Frost Nova | ID: frostNova | Type: Magic | Rank: Uncommon | Limited: No
+025. Astral Rend Uncommon | ID: uncommon_filler_3 | Type: Melee | Rank: Uncommon | Limited: No
+026. Ember Volley | ID: emberVolley | Type: Ranged | Rank: Uncommon | Limited: No
+027. Spirit Link | ID: spiritLink | Type: Support | Rank: Uncommon | Limited: No
+028. Vitality Bloom | ID: vitalityBloom | Type: Sustain | Rank: Uncommon | Limited: No
+029. Quick Harvest | ID: quickHarvest | Type: Utility | Rank: Uncommon | Limited: No
+030. Storm Tempo Uncommon | ID: uncommon_filler_1 | Type: Utility | Rank: Uncommon | Limited: No
+031. Blood Hex | ID: bloodHex | Type: Debuff | Rank: Epic | Limited: No
+032. Silent Curse Epic | ID: epic_filler_1 | Type: Debuff | Rank: Epic | Limited: No
+033. Arc Shield | ID: arcShield | Type: Defense | Rank: Epic | Limited: No
+034. Titan Bastion Epic | ID: epic_filler_3 | Type: Defense | Rank: Epic | Limited: No
+035. Chain Lightning | ID: chainLightning | Type: Magic | Rank: Epic | Limited: No
+036. Plasma Orbit | ID: plasmaOrbit | Type: Magic | Rank: Epic | Limited: No
+037. Void Spike | ID: voidSpike | Type: Magic | Rank: Epic | Limited: No
+038. Blade Cyclone | ID: bladeCyclone | Type: Melee | Rank: Epic | Limited: No
+039. Phantom Drive | ID: phantomDrive | Type: Mobility | Rank: Epic | Limited: No
+040. Runic Dash Epic | ID: epic_filler_2 | Type: Mobility | Rank: Epic | Limited: No
+041. Shadow Step | ID: shadowStep | Type: Mobility | Rank: Epic | Limited: No
+042. Spectral Arrow | ID: spectralArrow | Type: Ranged | Rank: Epic | Limited: No
+043. Rune Mastery | ID: runeMastery | Type: Support | Rank: Epic | Limited: No
+044. Venom Pulse Epic | ID: epic_filler_4 | Type: Sustain | Rank: Epic | Limited: No
+045. War Drum | ID: warDrum | Type: Utility | Rank: Epic | Limited: No
+046. Razor Wind | ID: razorWind | Type: Control | Rank: Legend | Limited: No
+047. Blood Surge | ID: bloodSurge | Type: Debuff | Rank: Legend | Limited: No
+048. Aegis Field | ID: aegisField | Type: Defense | Rank: Legend | Limited: No
+049. Titan Bastion Legend | ID: legend_filler_1 | Type: Defense | Rank: Legend | Limited: No
+050. Eternal Rift Legend | ID: legend_filler_4 | Type: Magic | Rank: Legend | Limited: No
+051. Inferno Drive | ID: infernoDrive | Type: Magic | Rank: Legend | Limited: No
+052. Thunder Totem | ID: thunderTotem | Type: Magic | Rank: Legend | Limited: No
+053. Astral Rend Legend | ID: legend_filler_5 | Type: Melee | Rank: Legend | Limited: No
+054. Storm Breaker | ID: stormBreaker | Type: Melee | Rank: Legend | Limited: No
+055. Savage Barrage Legend | ID: legend_filler_6 | Type: Ranged | Rank: Legend | Limited: No
+056. Battle Chant | ID: battleChant | Type: Support | Rank: Legend | Limited: No
+057. Soul Fountain | ID: soulFountain | Type: Sustain | Rank: Legend | Limited: No
+058. Vampiric Edge | ID: vampiricEdge | Type: Sustain | Rank: Legend | Limited: No
+059. Venom Pulse Legend | ID: legend_filler_2 | Type: Sustain | Rank: Legend | Limited: No
+060. Storm Tempo Legend | ID: legend_filler_3 | Type: Utility | Rank: Legend | Limited: No
+061. Savage Gravity Mytical | ID: mytical_filler_15 | Type: Control | Rank: Mytical | Limited: No
+062. Swift Lock Mytical | ID: mytical_filler_6 | Type: Control | Rank: Mytical | Limited: No
+063. Crimson Venom Mytical | ID: mytical_filler_7 | Type: Debuff | Rank: Mytical | Limited: No
+064. Runic Bulwark Mytical | ID: mytical_filler_9 | Type: Defense | Rank: Mytical | Limited: No
+065. Eternal Rift Mytical | ID: mytical_filler_3 | Type: Magic | Rank: Mytical | Limited: No
+066. Storm Sigil Mytical | ID: mytical_filler_12 | Type: Magic | Rank: Mytical | Limited: No
+067. Astral Rend Mytical | ID: mytical_filler_4 | Type: Melee | Rank: Mytical | Limited: No
+068. Eternal Fury Mytical | ID: mytical_filler_13 | Type: Melee | Rank: Mytical | Limited: No
+069. Silent Drift Mytical | ID: mytical_filler_8 | Type: Mobility | Rank: Mytical | Limited: No
+070. Astral Volley Mytical | ID: mytical_filler_14 | Type: Ranged | Rank: Mytical | Limited: No
+071. Savage Barrage Mytical | ID: mytical_filler_5 | Type: Ranged | Rank: Mytical | Limited: No
+072. Titan Mend Mytical | ID: mytical_filler_10 | Type: Sustain | Rank: Mytical | Limited: No
+073. Venom Pulse Mytical | ID: mytical_filler_1 | Type: Sustain | Rank: Mytical | Limited: No
+074. Storm Tempo Mytical | ID: mytical_filler_2 | Type: Utility | Rank: Mytical | Limited: No
+075. Venom Focus Mytical | ID: mytical_filler_11 | Type: Utility | Rank: Mytical | Limited: No
+076. Swift Lock Myth | ID: myth_filler_9 | Type: Control | Rank: Myth | Limited: No
+077. Void Collapse | ID: voidCollapse | Type: Control | Rank: Myth | Limited: No
+078. Crimson Venom Myth | ID: myth_filler_10 | Type: Debuff | Rank: Myth | Limited: No
+079. Silent Curse Myth | ID: myth_filler_1 | Type: Debuff | Rank: Myth | Limited: No
+080. Titan Bastion Myth | ID: myth_filler_3 | Type: Defense | Rank: Myth | Limited: No
+081. Celestial Lance | ID: celestialLance | Type: Limited | Rank: Myth | Limited: Yes
+082. Eternal Rift Myth | ID: myth_filler_6 | Type: Magic | Rank: Myth | Limited: No
+083. Astral Rend Myth | ID: myth_filler_7 | Type: Melee | Rank: Myth | Limited: No
+084. Runic Dash Myth | ID: myth_filler_2 | Type: Mobility | Rank: Myth | Limited: No
+085. Silent Drift Myth | ID: myth_filler_11 | Type: Mobility | Rank: Myth | Limited: No
+086. Annihilation Ray | ID: annihilationRay | Type: Ranged | Rank: Myth | Limited: No
+087. Savage Barrage Myth | ID: myth_filler_8 | Type: Ranged | Rank: Myth | Limited: No
+088. Venom Pulse Myth | ID: myth_filler_4 | Type: Sustain | Rank: Myth | Limited: No
+089. Chrono Focus | ID: chronoFocus | Type: Utility | Rank: Myth | Limited: No
+090. Storm Tempo Myth | ID: myth_filler_5 | Type: Utility | Rank: Myth | Limited: No
+091. Crimson Stasis God | ID: god_filler_1 | Type: Control | Rank: God | Limited: No
+092. Swift Lock God | ID: god_filler_10 | Type: Control | Rank: God | Limited: No
+093. Crimson Venom God | ID: god_filler_11 | Type: Debuff | Rank: God | Limited: No
+094. Silent Curse God | ID: god_filler_2 | Type: Debuff | Rank: God | Limited: No
+095. Runic Bulwark God | ID: god_filler_13 | Type: Defense | Rank: God | Limited: No
+096. Titan Bastion God | ID: god_filler_4 | Type: Defense | Rank: God | Limited: No
+097. Hand of God | ID: godHand | Type: Limited | Rank: God | Limited: Yes
+098. Eternal Rift God | ID: god_filler_7 | Type: Magic | Rank: God | Limited: No
+099. Astral Rend God | ID: god_filler_8 | Type: Melee | Rank: God | Limited: No
+100. Runic Dash God | ID: god_filler_3 | Type: Mobility | Rank: God | Limited: No
+101. Silent Drift God | ID: god_filler_12 | Type: Mobility | Rank: God | Limited: No
+102. Savage Barrage God | ID: god_filler_9 | Type: Ranged | Rank: God | Limited: No
+103. Titan Mend God | ID: god_filler_14 | Type: Sustain | Rank: God | Limited: No
+104. Venom Pulse God | ID: god_filler_5 | Type: Sustain | Rank: God | Limited: No
+105. Storm Tempo God | ID: god_filler_6 | Type: Utility | Rank: God | Limited: No
