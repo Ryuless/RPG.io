@@ -52,6 +52,10 @@ export const inViewport = (x, y, radius, camera) => {
   )
 }
 
+export const isMobileDevice = () => {
+  return window.innerWidth <= 768 || /Mobi|Android/i.test(navigator.userAgent)
+}
+
 export const spawnEnemyAroundPlayer = (player) => {
   const angle = randomRange(0, Math.PI * 2)
   const minRadius = Math.max(VIEW_WIDTH, VIEW_HEIGHT) * 0.55
