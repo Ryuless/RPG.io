@@ -883,12 +883,12 @@ button.accent:hover {
 
 @media (max-width: 1080px) {
   .app-shell {
-    padding: 14px;
+    padding: 8px; /* Reduced from 14px to maximize game space */
   }
 
   .page {
-    padding: 14px;
-    border-radius: 16px;
+    padding: 12px; /* Reduced from 14px */
+    border-radius: 12px;
   }
 
   .start-grid,
@@ -902,6 +902,21 @@ button.accent:hover {
   .wiki-head {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
+  }
+
+  .run-head h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .hud-stripe {
+    gap: 4px;
+  }
+
+  .run-meta span {
+    font-size: 11px;
+    padding: 4px 8px;
   }
 
   .home-head-actions,
@@ -920,13 +935,13 @@ button.accent:hover {
   }
 
   .virtual-controls {
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
   }
 
   .run-page {
-    padding-bottom: 140px; /* Space for virtual controls */
+    padding-bottom: 154px; /* Space for virtual controls */
   }
 }
 
